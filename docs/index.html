@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>表格編輯器</title>
+  <meta name="description" content="Google Sheets 表格編輯器 - 登入後編輯您的資料" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+      max-width: 600px;
+    }
+
+    .icon {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      animation: bounce 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .note {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">📊</div>
+    <h1>表格編輯器</h1>
+    <p>
+      這是一個 Google Sheets 表格編輯應用程式。<br/>
+      請使用 Lovable 平台預覽功能來測試完整功能。
+    </p>
+    <a href="https://lovable.dev" class="btn" target="_blank">前往 Lovable</a>
+    <p class="note">
+      此靜態頁面僅供 GitHub Pages 顯示用途。<br/>
+      完整應用請在 Lovable 編輯器中使用。
+    </p>
+  </div>
+</body>
+</html>
